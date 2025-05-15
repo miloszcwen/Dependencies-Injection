@@ -3,6 +3,7 @@ import { HTTP } from './http';
 import type { ApiConfig, User } from '../types';
 export class Users {
   static $inject = ['http', 'config'];
+  static $singleton = true;
 
   http: HTTP;
   apiConfig: ApiConfig;

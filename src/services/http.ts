@@ -3,6 +3,7 @@ import { Logger } from './logger';
 import type { ApiConfig } from '../types';
 export class HTTP {
   static $inject = ['logger', 'config'];
+  static $singleton = true;
 
   logger: Logger;
   apiConfig: ApiConfig;
